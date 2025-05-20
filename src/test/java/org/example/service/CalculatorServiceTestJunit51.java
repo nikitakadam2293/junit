@@ -44,10 +44,33 @@ public class CalculatorServiceTestJunit51 {
     }
 
     @Test
+   public void productTwoNumberTest()
+    {
+       int actualResult =  CalculatorService.productTwoNumber(2,4);
+       int expectedResult = 8;
+
+        Assertions.assertEquals(expectedResult,actualResult);
+        System.out.println("Find Product of two no ");
+
+    }
+
+        @Test
+        public void divideTwoNumberTest()
+        {
+          double actualResult = CalculatorService.divideTwoNumber(4,8);
+          double expectedResult = 0.0;
+
+          Assertions.assertEquals(expectedResult,actualResult);
+
+            System.out.println("Find Division of Two Number ");
+        }
+
+
+    @Test
     @Disabled
     public void addAnyNumbersTest()
     {
-        System.out.println("second test case");
+        System.out.println("Add any no test case");
         int result =  CalculatorService.sumAnyNumber(1,1,1,1);
 
         int expectedResult = 4;
